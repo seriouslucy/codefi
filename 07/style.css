@@ -1,0 +1,40 @@
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: lavender;
+    margin: 50px;
+
+}
+
+.counter-btn {
+    border: none;
+    background-color: lightblue;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#counter-btn:hover {
+    background-color: grey;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+#btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: lightblue;
+}
