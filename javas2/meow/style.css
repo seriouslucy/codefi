@@ -1,0 +1,14 @@
+#counter-button {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #counter-button:hover {
+    background-color: darkblue;
+  }
