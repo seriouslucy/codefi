@@ -51,7 +51,8 @@ const image1 = document.querySelector("img")
 
 const images = [
     'images/bunny.jpg',
-    'images/kitty.jpg'
+    'images/kitty.jpg',
+    'images/catonputer.png'
 ];
 
 
@@ -68,5 +69,7 @@ image1.src = images[randomIndex];
 
 function kittyHandler() {
 console.log('hello')
+let randomIndex = Math.floor(Math.random() * images.length)
+image1.src = images[randomIndex];
 }
 
