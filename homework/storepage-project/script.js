@@ -1,5 +1,7 @@
 const cartBtn = document.querySelector(".cart");
 
-function cartBtn() {
-    
+cartBtn.addEventListener('click', clickHandler);
+
+function clickHandler() {
+    console.log('connected');
 }
