@@ -9,37 +9,63 @@
 <body>
   
 <script>
-    greeting();
-    function greeting() {
-        console.log('hello');
-    }
+    // greeting();
+    // function greeting() {
+    //     console.log('hello');
+    // }
 
-    greeting();
+    // greeting();
     
-    const num = 2;
-    const function1 = function() {
-        console.log('hello2');
-    }; 
-    //function without name is called anonymous function
+    // const num = 2;
+    // const function1 = function() {
+    //     console.log('hello2');
+    // }; 
+    // //function without name is called anonymous function
 
-    console.log(function1);
-    console.log(typeof function1);
-    function1();
+    // console.log(function1);
+    // console.log(typeof function1);
+    // function1();
 
-    const object1 = {
-        num: 2,
-        fun: function greeting() {
-            console.log('hello3');
-        }
-    };
-    object1.fun();
-    // method is function saved in object
+    // const object1 = {
+    //     num: 2,
+    //     fun: function greeting() {
+    //         console.log('hello3');
+    //     }
+    // };
+    // object1.fun();
+    // // method is function saved in object
 
-    function display(param) {
-        console.log(param);
-    }
+    // function display(param) {
+    //     console.log(param);
+    // }
 
-    display(2);
+    // display(2);
+
+    // function run(param) {
+    //     param();
+    // }
+    //  run(function() {
+    //     console.log('hello4');
+    //  });
+
+     //setTimeout allows to run function in the FUTURE 
+
+     setTimeout(function() {
+        console.log('timeout');
+        console.log('timeout2');
+     }, 3000); 
+     //takes two parameters- a function and how long to wait before running the function
+
+     //Asynchronous code - computer wont wait for line to finish before going to next line
+     //Synchronous code WILL wait for line to finish
+
+     console.log('next line');
+
+     setInterval(function() {
+        console.log('interval');
+     }, 3000);
+
+     console.log('next line 2');
 </script> 
 </body>
 </html>
