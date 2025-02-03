@@ -50,22 +50,35 @@
 
      //setTimeout allows to run function in the FUTURE 
 
-     setTimeout(function() {
-        console.log('timeout');
-        console.log('timeout2');
-     }, 3000); 
-     //takes two parameters- a function and how long to wait before running the function
+   //   setTimeout(function() {
+   //      console.log('timeout');
+   //      console.log('timeout2');
+   //   }, 3000); 
+   //   //takes two parameters- a function and how long to wait before running the function
 
-     //Asynchronous code - computer wont wait for line to finish before going to next line
-     //Synchronous code WILL wait for line to finish
+   //   //Asynchronous code - computer wont wait for line to finish before going to next line
+   //   //Synchronous code WILL wait for line to finish
 
-     console.log('next line');
+   //   console.log('next line');
 
-     setInterval(function() {
-        console.log('interval');
-     }, 3000);
+   //   setInterval(function() {
+   //      console.log('interval');
+   //   }, 3000);
 
-     console.log('next line 2');
+   //   console.log('next line 2');
+
+   [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+   ].forEach(function(value, index) {
+      if (value === 'wash dishes') {
+         return;
+      }
+      console.log(index);
+      console.log(value);
+
+   }); //allows us to loop through array
 </script> 
 </body>
 </html>
