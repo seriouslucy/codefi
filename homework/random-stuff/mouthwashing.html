@@ -7,6 +7,7 @@
     <style>
         body {
             background-image: url("image/stars.gif");
+            text-align: center;
         }
 
         @font-face {
@@ -14,17 +15,53 @@
             src: url('fonts/ConstantiaBold.ttf');
         }
 
-        p {
+        .idea1 {
             color: white;
             font-family: 'ConstantiaBold';
+            font-size: 40px;
+            text-align: left;
+            text-shadow: whitesmoke 1px 0 5px;
         }
+
+        .failure1 {
+            color: red;
+            font-family: 'ConstantiaBold';
+            font-size: 40px;
+            text-align: left;
+        }
+        button {
+            font-family: 'ConstantiaBold';
+            background-color: firebrick;
+            padding: 10px;
+            color: ghostwhite;
+            font-size: x-large;
+            cursor: pointer;
+            margin: 20px;
+            border-radius: 5px;
+            text-shadow: whitesmoke 1px 0 5px;
+        }
+
+        button:hover {
+            background-color: darkred;
+            
+        }
+
+        audio {
+            display: none;
+        }
+
+       
     </style>
 </head>
 <body>
-   
-    <p id="idea"></p>
+    <audio controls autoplay>
+        <source src="sounds/spookyambiance3.mp3" type="audio/mpeg">
+    </audio>
+   <button id="myButton" onclick="window.location.href='sunset.html'">TAKE RESPONSIBILITY</button>
+    <p id="idea" class="idea1"></p>
+    <p id="idea" class="failure1"></p>
 
-    <button></button>
+    
     <script src="script.js"></script>
 </body>
 </html>

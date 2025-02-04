@@ -1,4 +1,4 @@
-alert('I hope this hurts');
+// alert('I hope this hurts');
 
 window.addEventListener("mouseover", myFunction1);
 window.addEventListener("mouseout", myFunction2);
@@ -9,9 +9,10 @@ function myFunction1() {
 }
 
 function myFunction2() {
-  document.getElementById("idea").innerHTML += "I HOPE THIS HURTS "
+  document.getElementById("idea").innerHTML += "TAKE CARE OF IT "
 }
 
 function myFunction3() {
-    document.getElementById("idea").innerHTML += "TAKE CARE OF IT "
+    document.getElementById("idea").innerHTML += "SYSTEM FAILURE "
 }
+
