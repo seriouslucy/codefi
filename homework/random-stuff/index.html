@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I HOPE THIS HURTS</title>
+    <link rel="icon" type="image/x-icon" href="image/mlogo.png">
+    
+    <style>
+        
+         @font-face {
+            font-family: 'ConstantiaBold';
+            src: url('fonts/ConstantiaBold.ttf');
+        }
+
+        #myVideo {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            bottom: 0;
+            right: 0;
+        }
+        
+        audio {
+            display: none;
+        }
+        
+        
+        .content {
+            position: fixed;
+           font-size: xx-large;
+            color: white;
+            width: 90%;
+            padding: 20px;
+            
+        }
+
+        p {
+            font-family: 'ConstantiaBold';
+             font-size: 40px;
+             text-align: center;
+             text-shadow: 1px 1px 2px black;
+        }
+        
+        .blinking {
+            animation: opacity 5s ease-in-out infinite;
+            opacity: 1;
+            }
+
+            @keyframes opacity {
+            0% {
+            opacity: 1;
+            }
+
+            50% {
+            opacity: 0
+            }
+
+            100% {
+            opacity: 1;
+            }
+                 }
+
+        table {
+            font-family: 'ConstantiaBold';
+            border-collapse: collapse;
+            text-shadow: 1px 1px 2px pink;
+        }
+
+            td {
+                
+                text-align: left;
+                padding: 8px;
+            }
+
+            button {
+                float: right;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            .next img {
+                width: 80px;
+                height: 100px;
+                opacity: 0.5;
+            }
+
+         
+        </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="nightscreen.mp4" type="video/mp4">
+    </video>
+
+    <audio controls autoplay>
+    <source src="newchapter.mp3" type="audio/mpeg">
+    </audio>
+   
+    <div class="content">
+        <table>
+            <tr>
+                <td>Pony Express Long-Haul</td>
+                <tr>
+                    <td>Space Freighter</td>
+                    <td>Tulpar</td>
+                </tr>
+                    <td>Crew</td>
+                    <td>5</td>
+                <tr>
+                    <td>Planned Shipment Duration</td>
+                    <td>382 days</td>
+                </tr>
+                <tr>
+                    <td>Elapsed Transit Time</td>
+                    <td>147 days</td>
+                </tr>
+            </tr>
+            
+        </table>
+        <br>
+        <br>
+        <p class="blinking">I hope this hurts</p>
+
+        <button class="next js-next"><img src="image/arrow.gif" alt="arrow"></button>
+        <script src="scripts/sunset.js"></script>
+    </div>
+</body>
+</html>

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAKE RESPONSIBILITY</title>
+    <title>KILLS 99%</title>
+    <link rel="icon" type="image/x-icon" href="image/mlogo.png">
     <style>
         body {
-            background-image: url("image/stars.gif");
+            background-color: black;
             text-align: center;
         }
 
@@ -23,45 +24,56 @@
             text-shadow: whitesmoke 1px 0 5px;
         }
 
-        .failure1 {
-            color: red;
-            font-family: 'ConstantiaBold';
-            font-size: 40px;
-            text-align: left;
-        }
+      
         button {
             font-family: 'ConstantiaBold';
-            background-color: firebrick;
-            padding: 10px;
-            color: ghostwhite;
-            font-size: x-large;
+            background: transparent;
+            border: none;
+            color: red;
+            font-size: 50px;
             cursor: pointer;
-            margin: 20px;
-            border-radius: 5px;
-            text-shadow: whitesmoke 1px 0 5px;
-        }
-
-        button:hover {
-            background-color: darkred;
-            
+            margin-top: 50px;
+            text-shadow: pink 1px 0 2px;
         }
 
         audio {
             display: none;
         }
 
+        .blinking {
+            animation: opacity 0.5s ease-in-out infinite;
+            opacity: 1;
+            }
+
+         @keyframes opacity {
+            0% {
+            opacity: 1;
+            }
+
+            50% {
+            opacity: 0
+            }
+
+            100% {
+            opacity: 1;
+            }
+                 }
+
+
        
     </style>
 </head>
 <body>
     <audio controls autoplay>
-        <source src="sounds/spookyambiance3.mp3" type="audio/mpeg">
+        <source src="spookyambiance3.mp3" type="audio/mpeg">
     </audio>
-   <button id="myButton" onclick="window.location.href='sunset.html'">TAKE RESPONSIBILITY</button>
+
+    <div id="container">
+   <button id="myButton" class="blinking" onclick="window.location.href='curly.html'">SYSTEM FAILURE</button>
     <p id="idea" class="idea1"></p>
-    <p id="idea" class="failure1"></p>
+   </div>
 
     
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
