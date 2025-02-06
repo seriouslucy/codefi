@@ -5,12 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAKE RESPONSIBILITY</title>
     <style>
+         @font-face {
+            font-family: 'ConstantiaBold';
+            src: url('fonts/ConstantiaBold.ttf');
+        }
+
         body {
             background-color: black;
         }
-    </style>
+
+        #myVideo {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            bottom: 0;
+            right: 0;
+        }
+
+        .content {
+            position:relative;
+            font-size: xx-large;
+            color: white;
+            font-family: "ConstantiaBold";  
+            text-align: center;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .transbox {
+        margin: auto;
+        width: 80%;
+        padding: 30px;
+        background: rgba(0,0,0,.5);
+        border-radius: 20px;
+        }
+
+
+       button {
+        font-family: "ConstantiaBold";
+        font-size: 50px;
+        text-shadow: whitesmoke 1px 0 5px;
+        border: none;
+        color: aliceblue;
+        background: transparent;
+       }
+       
+       p {
+        text-align: left;
+        text-shadow: whitesmoke 1px 0 5px;
+       }
+
+       .anya {
+        color: aqua;
+       }
+        
+        </style>
 </head>
 <body>
+    <video autoplay loop id="myVideo">
+        <source src="nightscreen.mp4" type="video/mp4">
+    </video>
     
+    <div class="content">
+    <div class="transbox">
+    <p class="anya">Why do you think Pony Express put a lock on the medical room door but not in the sleeping quarters?</p>
+
+    <p><em>Hmm.</em></p>
+    <p><em>I suppose for the same reason they put a lock on the cockpit.</em></p>
+
+    <button class="js-safety-btn">Safety.</button>
+    </div></div>
+
+    <script src="scripts/night.js"></script>
 </body>
 </html>
